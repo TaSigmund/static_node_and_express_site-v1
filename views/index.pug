@@ -5,15 +5,20 @@ block content
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 Heading
+    h1 My Projects - Frontend to Backend
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
-
+    p This page features projects that I have completed as part of the TeamTreehouse Techdegree and will be updated with some of my very own soon.
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
+      each project in projects
+        .cell
+          a(href= project.live_link)
+            img.thumbnail(src=project.image_urls[0], alt='Thumbnail ' + project.project_name)
+            h5 #{project.project_name}
 
+            
       //- Use the Pug `each` iterator to loop over the projects in your data file  
       
         //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
