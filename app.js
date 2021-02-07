@@ -9,7 +9,7 @@ const { projects } = require('./data/data.json');
 app.set('view engine', 'pug');
 
 /* static assets */
-app.use(express.static('public'));
+app.use('/static', express.static('public'));
 
 /***
  ROUTES
@@ -19,7 +19,11 @@ app.use(express.static('public'));
 
  app.get('/about', (req, res)=>{res.render("about")});
 
- app.get('/projects/:id', (req, res)=>{res.render("project"), { projects }});
+ app.get('/projects/:id', (req, res)=>{
+    const projectId = req.params.id;
+    const project = projects.find( ({ id }) => id === +projectId );
+    res.render("project", {project})
+});
 
 /* server */
 app.listen(3000)

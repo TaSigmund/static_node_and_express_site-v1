@@ -6,34 +6,31 @@ html(lang="en" dir="ltr")
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
-    link(rel='stylesheet', href='css/normalize.css')
-    link(rel='stylesheet', href='css/styles.css')
+    link(rel='stylesheet', href='/static/css/normalize.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
 
   body
     #my-info.sidebar
       .sidebar-info-box
         br
         .thumbnail-box
-          img.thumbnail(src='https://placehold.it/550x350', alt='')
+          img.thumbnail(src='/static/img/profile_placeholder.jpg', alt='profile')
         .dev-intro-box
 
-          //- Replace with your name
           h5 Tapio Sigmund
 
-          //- Replace with description of who you are, what you do, and why you are so awesome
           p I am an aspiring Fullstack Developer from Berlin.
 
-          //- Add path from your '/about' route handler to the href below
-          a(href='') Learn More &rarr;
+          a(href='/about') Learn More &rarr;
 
     .wrapper
       .header
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
+          //- mobile layout
           span Tapio Sigmund
 
       block content
 
-  script(src='js/script.js')
+  script(src='/static/js/script.js')
