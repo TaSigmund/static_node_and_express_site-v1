@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+
+  article.portfolio-intro
+    h1 #{err.message}
+    p #{err.status}
