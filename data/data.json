@@ -5,45 +5,45 @@
             "project_name": "Techdegree Project 1 - A Random Quote Generator",
             "description": "A random quote generator that displays a new quote every 10 seconds or whenever the button is clicked. Every time a new quote gets displayed the background color changes.",
             "technologies": ["client-side JavaScript", "data structures"],
-            "live_link": "https://placeholder.dede",
+            "live_link": "https://tasigmund.github.io/A-Random-Quote-Generator/index.html",
             "github_link": "https://github.com/TaSigmund/A-Random-Quote-Generator.git",
-            "image_urls": ["img/landing_placeholder.jpg", "img/second_placeholder.jpg"]
+            "image_urls": ["img/RandomQuote1.jpg", "img/RandomQuote2.jpg"]
         },
         {
             "id": 1,
             "project_name": "Techdegree Project 2 - List Pagination And Filtering",
             "description": "This project adds a pagination filter to the webpage. Not more than 10 list items at a time are displayed. The appropriate navigation bar is generated dynamically. A search feature allows the user to search for a particular student.",
             "technologies": ["client-side JavaScript", "CSS"],
-            "live_link": "https://placeholder.dede",
+            "live_link": "https://tasigmund.github.io/list_pagination_and_filtering-v1/index.html",
             "github_link": "https://github.com/TaSigmund/list_pagination_and_filtering-v1.git",
-            "image_urls": ["img/landing_placeholder.jpg", "img/second_placeholder.jpg"]
+            "image_urls": ["img/pagination1.jpg", "pagination2.jpg"]
         },
         {
             "id": 2,
             "project_name": "Techdegree Project 3 - Interactive Form",
             "description": "This is a form validation project. Fields that fail validation turn red and an error message appears. There is live feedback for the name and e-mail field once they lose focus and for the credit card information and the e-mail field as the user types. Selection options are filtered based on previous selection.",
             "technologies": ["client-side JavaScript", "Regular Expressions", "CSS"],
-            "live_link": "https://placeholder.dede",
+            "live_link": "https://tasigmund.github.io/interactive-form-v2/index.html",
             "github_link": "https://github.com/TaSigmund/interactive-form-v2.git",
-            "image_urls": ["img/landing_placeholder.jpg", "img/second_placeholder.jpg"]
+            "image_urls": ["img/form1.jpg", "img/form2.jpg"]
         },
         {
             "id": 3,
             "project_name": "Techdegree Project 4 - OOP Game",
             "description": "A browser-based word guessing game using JS and OOP. The user can use an on-screen or physical keyboard to guess the letters of a randomly selected phrase.",
             "technologies": ["Object-Oriented Programming"],
-            "live_link": "https://placeholder.dede",
+            "live_link": "https://tasigmund.github.io/oop_game-v2/index.html",
             "github_link": "https://github.com/TaSigmund/oop_game-v2.git",
-            "image_urls": ["img/landing_placeholder.jpg", "img/second_placeholder.jpg"]
+            "image_urls": ["img/oop1.jpg", "img/oop2.jpg"]
         },
         {
             "id": 4,
             "project_name": "Techdegree Project 5 - Public API Request",
             "description": "A page that utilizes the fetch API to request user data. The user data can be filtered with the help of a search field. Once a card is clicked a modal opens up. The user can toggle throught the modals. A search feature works with upper case as well as lower case letters",
             "technologies": ["Promises", "Fetch API"],
-            "live_link": "https://placeholder.dede",
+            "live_link": "https://tasigmund.github.io/public_api_request/index.html",
             "github_link": "https://github.com/TaSigmund/public_api_request.git",
-            "image_urls": ["img/landing_placeholder.jpg", "img/second_placeholder.jpg"]
+            "image_urls": ["img/publicapi1.jpg", "img/publicapi2.jpg"]
         }
     ]
 }

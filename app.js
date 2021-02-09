@@ -18,9 +18,10 @@ app.use('/static', express.static('public'));
 
  app.get('/about', (req, res)=>{res.render("about")});
 
- app.get('/projects/:id', (req, res)=>{
+ app.get('/projects/:id', (req, res, next)=>{
     const projectId = req.params.id;
     const project = projects.find( ({ id }) => id === +projectId );
+    if (!project) {next()} //makes sure there actually is a project to display before rendering
     res.render("project", {project})
 });
 
@@ -45,7 +46,7 @@ app.use((err, req, res, next) => {
     console.log(err.status, err.message);
     res.status(err.status);
     if (err.status === 404) {
-        res.render('notfound', { err })
+        res.render('page-not-found', { err })
     }
     else {
         res.render('error', { err })
