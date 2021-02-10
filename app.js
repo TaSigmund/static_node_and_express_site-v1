@@ -26,7 +26,7 @@ app.use('/static', express.static('public'));
     const projectId = req.params.id; //checks the url
     const project = projects.find( ({ id }) => id === +projectId ); //finds the correct project
     if (!project) {next()} //makes sure there actually is a project to display before rendering
-    res.render("project", {project}) //renders the view
+    else {res.render("project", {project})} //renders the view
 });
 
 /*** 
